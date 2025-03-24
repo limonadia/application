@@ -17,7 +17,6 @@ export class NavbarComponent implements OnInit {
       this.imageUrl = "https://merrimacshs.eq.edu.au/SiteCollectionImages/news-icons/Kinetic.png";
       this.loading = false; 
     }, 1000);
-    
   }
 
 }
