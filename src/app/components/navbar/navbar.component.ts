@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  imageUrl?: string;
   constructor() { }
 
   ngOnInit() {
+    setTimeout(() => {
+      this.imageUrl = "https://merrimacshs.eq.edu.au/SiteCollectionImages/news-icons/Kinetic.png";
+    }, 500);
   }
 
 }
