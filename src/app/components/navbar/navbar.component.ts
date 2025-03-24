@@ -7,13 +7,17 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  loading: boolean = true;
   imageUrl?: string;
   constructor() { }
 
   ngOnInit() {
+    this.loading = true; 
     setTimeout(() => {
       this.imageUrl = "https://merrimacshs.eq.edu.au/SiteCollectionImages/news-icons/Kinetic.png";
-    }, 500);
+      this.loading = false; 
+    }, 1000);
+    
   }
 
 }
