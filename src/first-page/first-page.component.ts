@@ -1,14 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
-import { SharedComponentsModule } from '../components/SharedComponents';
-import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-first-page',
   templateUrl: './first-page.component.html',
   styleUrls: ['./first-page.component.css'],
-  standalone: true,
-  imports:[SharedComponentsModule, FormsModule]
 })
 export class FirstPageComponent implements OnInit {
 

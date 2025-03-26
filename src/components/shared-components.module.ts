@@ -4,19 +4,18 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
 import { FooterComponent } from './footer/footer.component';
 
-const components = [
-    NavbarComponent,
-    FooterComponent
-];
-
 @NgModule({
     imports: [
       CommonModule,
       NgxSkeletonLoaderModule
     ],
-    declarations: components,
+    declarations: [
+      NavbarComponent,
+      FooterComponent
+    ],
     exports: [
-      ...components,
+      NavbarComponent,
+      FooterComponent
     ]
   })
   export class SharedComponentsModule { }
