@@ -4,7 +4,7 @@
   <div class="flex flex-col items-center justify-between">
 
     <p class="font pt-5">Add Your Personal Details</p>
-    <form *ngIf="form" [formGroup]="form" class="flex flex-col mt-6 w-1/2 items-center">
+    <form *ngIf="form" [formGroup]="form" class="flex flex-col mt-6 w-1/2 items-center mb-8">
       <app-input [formGroup]="form" controlName="name" placeholder="First name"></app-input>
       <app-input [formGroup]="form" controlName="lastName" placeholder="Last name"></app-input>
       <app-input [formGroup]="form" controlName="email" placeholder="Email" type="email"></app-input>
@@ -24,6 +24,8 @@
       </div>
       <app-button text="submit your details" (onClick)="toThirdPage()" [disabled]="!form.valid"></app-button>
     </form>
+
+    <p style="font-size: 0.55rem;"> Terms and Conditions | Privacy Policy | California Privacy</p>
 
   <app-footer></app-footer>
 

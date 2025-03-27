@@ -31,7 +31,14 @@
   .valid-input {
     border: solid black 1.5px;
   }
-  
+
+  select:focus {
+    border: solid black 1.5px;
+  }
+
+ option{
+  color: yellow;
+ }
   .input-container {
     position: relative;
     width: 200px;
