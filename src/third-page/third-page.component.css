@@ -26,3 +26,21 @@
     align-items: center;
     padding-left: 0.5rem;
 }
+
+@media (max-width: 1210px) {
+    .box{
+      width: 75%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .text-base{
+      width: 75%;
+    }
+  }
+
+  @media (max-width: 765px) {
+    .box{
+      height: 550px;
+    }
+  }

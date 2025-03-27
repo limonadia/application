@@ -5,20 +5,20 @@
 
     <div class="flex flex-col items-center box py-10 my-5">
       <p class="font pt-5">Profile</p>
-      <div class="flex flex-col w-full h-full justify-between px-10 mt-10">
-        <div class="flex flex-row w-full justify-between">
+      <div class="flex flex-col w-full h-full justify-between md:px-10 mt-10">
+        <div class="flex md:flex-row flex-col w-full justify-between items-center">
           <p class="text">Name:</p>
           <p class="text-base">{{name}} {{lastName}}</p>
         </div>
-        <div class="flex flex-row w-full justify-between">
+        <div class="flex md:flex-row flex-col w-full justify-between items-center">
           <p class="text">Email:</p>
           <p class="text-base">{{email}}</p>
         </div>
-        <div class="flex flex-row w-full justify-between">
+        <div class="flex md:flex-row flex-col w-full justify-between items-center">
           <p class="text">Phone Number:</p>
           <p class="text-base">{{phone}}</p>
         </div>
-        <div class="flex flex-row w-full justify-between">
+        <div class="flex md:flex-row flex-col w-full justify-between items-center">
           <p class="text">Time:</p>
           <p class="text-base">{{time}} {{pm? "PM" : "AM"}} CST</p>
         </div>
