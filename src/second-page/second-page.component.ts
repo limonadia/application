@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, RequiredValidator, Validators } from '@angular/forms';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-second-page',
@@ -7,11 +8,18 @@ import { FormBuilder, FormControl, FormGroup, RequiredValidator, Validators } fr
   styleUrls: ['./second-page.component.css']
 })
 export class SecondPageComponent implements OnInit {
-
+  time?: string;
   form: FormGroup;
   constructor(
-    private fb: FormBuilder
+    private fb: FormBuilder,
+    private router: Router,
+    private activatedRoute: ActivatedRoute
   ) { 
+
+    this.activatedRoute.queryParams.subscribe(params => {
+      this.time = params['time'];
+    });
+
     this.form = new FormGroup({
       name: new FormControl('', Validators.required),
       lastName: new FormControl('', Validators.required),
@@ -24,13 +32,17 @@ export class SecondPageComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(){
+  onSubmit(){}
 
-  }
-
-  toThirdPage(){
+  toThirdPage() {
     if (this.form.valid) {
-      console.log('Form submitted:', this.form.value);
+      const { terms, ...formValues } = this.form.value;
+      this.router.navigate(['/third-page'], {
+        queryParams: { 
+          ...formValues,
+          time: this.time 
+        }
+      });
     }
   }
 

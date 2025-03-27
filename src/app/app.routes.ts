@@ -3,6 +3,7 @@ import { SecondPageComponent } from '../second-page/second-page.component';
 
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { ThirdPageComponent } from '../third-page/third-page.component';
 
 export const routes: Routes = [
   {   
@@ -20,6 +21,14 @@ export const routes: Routes = [
   {
     path: 'second-page',
     loadChildren: () => import('../second-page/second-page.module').then( m => m.SecondPageModule)
+  },
+  {   
+    path: 'third-page',
+    component: ThirdPageComponent 
+  },
+  {
+    path: 'second-page',
+    loadChildren: () => import('../third-page/third-page.module').then( m => m.ThirdPageModule)
   },
   {
     path: '', 

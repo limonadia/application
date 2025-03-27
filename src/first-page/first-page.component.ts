@@ -13,7 +13,9 @@ export class FirstPageComponent implements OnInit {
   constructor(private router: Router){}
 
   toSecondPage(){
-    this.router.navigate(['/second-page']);
+    if (this.selectedTime) {
+      this.router.navigate(['/second-page'], { queryParams: { time: this.selectedTime } });
+    }
   }
 
   ngOnInit() {
