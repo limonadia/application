@@ -18,6 +18,11 @@ export class InputComponent implements OnInit {
    }
 
   ngOnInit() {
+    this.control.valueChanges.subscribe(value => {
+      if (value) {
+        this.control.markAsTouched();
+      }
+    });
   }
 
   get control(): FormControl {

@@ -12,7 +12,6 @@ export class NavbarComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.loading = true; 
     setTimeout(() => {
       this.imageUrl = "https://merrimacshs.eq.edu.au/SiteCollectionImages/news-icons/Kinetic.png";
       this.loading = false; 
