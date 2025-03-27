@@ -5,6 +5,7 @@ button{
     background-color: rgb(26, 126, 249);
     color: white;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 button:disabled {

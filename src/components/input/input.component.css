@@ -9,4 +9,5 @@ input{
     border-radius: 8px;
     background-color: rgba(246, 246, 246, 0.771);
     padding-left: 1rem;
+    min-width: 100%;
 }

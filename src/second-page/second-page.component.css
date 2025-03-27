@@ -5,8 +5,11 @@
 }
 
 input{
-    width: 15px;
-    height: 15px;
-    margin-top: 1.5rem;
-    margin-left: 1.5rem;
+    width: 20px;
+    height: 20px;
+    margin-top: 0.5rem;
+}
+
+.paragraph-box{
+    width: 570px;
 }
