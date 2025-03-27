@@ -29,10 +29,8 @@ export class ThirdPageComponent implements OnInit {
     } else {
       this.pm = false;
     }
-
-   }
-
-  ngOnInit() {
   }
+
+  ngOnInit() {}
 
 }

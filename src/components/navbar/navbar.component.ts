@@ -9,7 +9,7 @@ export class NavbarComponent implements OnInit {
 
   loading: boolean = true;
   imageUrl?: string;
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     setTimeout(() => {

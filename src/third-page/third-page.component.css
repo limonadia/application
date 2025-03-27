@@ -1,46 +1,46 @@
 .font{
-    font-weight: 800;
-    font-size: 40px;
-    color: rgba(0, 0, 0, 0.746);
+  font-weight: 800;
+  font-size: 40px;    
+  color: rgba(0, 0, 0, 0.746);
 }
 
 .text{
-    font-weight: 400;
+  font-weight: 400;
 }
 
 .box{
-    width: 50%;
-    height: 400px;
-    box-shadow: 0px 4px 30px rgba(1, 4, 12, 0.25);
+  width: 50%;
+  height: 400px;
+  box-shadow: 0px 4px 30px rgba(1, 4, 12, 0.25);
 }
 
 .text-base{
-    width: 400px;
-    height: 40px;
-    color: rgba(75, 74, 74, 0.767);
-    border: 0.3px solid rgba(146, 145, 145, 0.701);
-    box-shadow: 0px 4px 5px 0px rgb(146 145 145 / 28%);
-    border-radius: 3px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-left: 0.5rem;
+  width: 400px;
+  height: 40px;
+  color: rgba(75, 74, 74, 0.767);
+  border: 0.3px solid rgba(146, 145, 145, 0.701);
+  box-shadow: 0px 4px 5px 0px rgb(146 145 145 / 28%);
+  border-radius: 3px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 0.5rem;
 }
 
 @media (max-width: 1210px) {
-    .box{
-      width: 75%;
-    }
+  .box{
+    width: 75%;
   }
+}
 
-  @media (max-width: 800px) {
-    .text-base{
-      width: 75%;
-    }
+@media (max-width: 800px) {
+  .text-base{
+    width: 75%;
   }
+}
 
-  @media (max-width: 765px) {
-    .box{
-      height: 550px;
-    }
+@media (max-width: 765px) {
+  .box{
+    height: 550px;
   }
+}

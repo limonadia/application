@@ -10,6 +10,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class SecondPageComponent implements OnInit {
   time?: string;
   form: FormGroup;
+
   constructor(
     private fb: FormBuilder,
     private router: Router,
@@ -29,10 +30,7 @@ export class SecondPageComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
-  }
-
-  onSubmit(){}
+  ngOnInit() {}
 
   toThirdPage() {
     if (this.form.valid) {

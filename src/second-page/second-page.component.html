@@ -1,15 +1,15 @@
 <div class="w-screen h-auto overflow-auto">
 
   <app-navbar></app-navbar>
-  <div class="flex flex-col items-center w-full justify-between">
-
+  <div class="w-full flex flex-col items-center justify-between">
+    
     <p class="font pt-5 md:text-3xl sm:text-2xl text-xl">Add Your Personal Details</p>
-    <form *ngIf="form" [formGroup]="form" class="flex flex-col mt-6 w-1/2 items-center mb-8">
+    <form [formGroup]="form" class="w-1/2 flex flex-col items-center mt-6 mb-8">
       <app-input [formGroup]="form" controlName="name" placeholder="First name"></app-input>
       <app-input [formGroup]="form" controlName="lastName" placeholder="Last name"></app-input>
       <app-input [formGroup]="form" controlName="email" placeholder="Email" type="email"></app-input>
       <app-input [formGroup]="form" controlName="phone" placeholder="Phone Number"></app-input>
-      <div class="w-full my-5 mb-8 flex flex-row p-5 pb-10 paragraph-box" style="background-color: rgba(246, 246, 246, 0.771);">
+      <div class="w-full flex flex-row p-5 pb-10 my-5 mb-8 paragraph-box">
         <input type="checkbox" required formControlName="terms">
         <p class="text-justify text-xs ml-2">
           By clicking the button above, you acknowledge, consent, and agree to the following: a) Our Privacy Policy and consent to 
@@ -27,8 +27,7 @@
 
     <p style="font-size: 0.55rem;"> Terms and Conditions | Privacy Policy | California Privacy</p>
 
-  <app-footer></app-footer>
-
+    <app-footer></app-footer>
 
   </div>
 </div>

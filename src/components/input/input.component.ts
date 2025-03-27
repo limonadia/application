@@ -11,11 +11,9 @@ export class InputComponent implements OnInit {
   @Input() controlName: string = '';
   @Input() formGroup?: FormGroup;
   @Input() placeholder?: string;
-  @Input() type: string  = 'text';
+  @Input() type: string = 'text';
 
-  constructor() {
-    
-   }
+  constructor() {}
 
   ngOnInit() {
     this.control.valueChanges.subscribe(value => {
@@ -41,6 +39,5 @@ export class InputComponent implements OnInit {
     }
   }
  
-
 }
 

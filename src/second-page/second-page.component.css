@@ -1,26 +1,27 @@
 .font{
-    font-weight: 800;
-    color: rgba(0, 0, 0, 0.746);
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.746);
 }
 
 input{
-    width: 20px;
-    height: 20px;
-    margin-top: 0.5rem;
+  width: 20px;
+  height: 20px;
+  margin-top: 0.5rem;
 }
 
 .paragraph-box{
-    width: 570px;
+  width: 570px;
+  background-color: rgba(246, 246, 246, 0.771);
 }
 
 @media (max-width: 686px) {
-    .paragraph-box{
-        width: 400px;
-    }
+  .paragraph-box{
+    width: 400px;
   }
+}
 
-  @media (max-width: 461px) {
-    .paragraph-box{
-      width: 250px;
-    }
+@media (max-width: 461px) {
+  .paragraph-box{
+    width: 250px;
   }
+}

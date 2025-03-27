@@ -1,14 +1,13 @@
 <div class="w-screen h-full overflow-auto">
 
   <app-navbar></app-navbar>
-
-  <div class="flex flex-col h-full w-screen">
-    <div class="flex flex-col h-2/5 w-full items-center justify-between">
+  
+  <div class="h-full w-screen flex flex-col">
+    <div class="h-2/5 w-full flex flex-col items-center justify-between">
       <p class="font lg:text-4xl md:text-3xl sm:text-2xl text-xl text-center pt-5">What Is The Best Time To Reach You?</p>
       <form #timeForm="ngForm" class="flex flex-col items-center justify-center my-5 mb-8">
-        <select name="time" id="time" class="styled-input" [(ngModel)]="selectedTime" [class.valid-input]="timeForm.valid"
-        [class.invalid-input]="timeForm.invalid" required>
-          <option class="bg-red-500" value="" disabled selected>Choose Your Time</option>
+        <select name="time" class="styled-input" [(ngModel)]="selectedTime" [class.valid-input]="timeForm.valid" required>
+          <option value="" disabled selected>Choose Your Time</option>
           <option value="8">8 AM CST</option>
           <option value="9">9 AM CST</option>
           <option value="10">10 AM CST</option>
@@ -21,7 +20,7 @@
           <option value="5">5 PM CST</option>
         </select>
         <p class="small py-3">(All times are in CST)</p>
-        <app-button id="continue-btn" text="continue" (onClick)="toSecondPage()" [disabled]="!timeForm.valid" ></app-button>
+        <app-button text="continue" (onClick)="toSecondPage()" [disabled]="!timeForm.valid"></app-button>
       </form>
       <p style="font-size: 0.55rem;"> Terms and Conditions | Privacy Policy | California Privacy</p>
     </div>
