@@ -8,16 +8,16 @@
         <select name="time" id="time" class="styled-input" [(ngModel)]="selectedTime" [class.valid-input]="timeForm.valid"
         [class.invalid-input]="timeForm.invalid" required>
           <option value="" disabled selected>Choose Your Time</option>
-          <option value="8am">8 AM CST</option>
-          <option value="9am">9 AM CST</option>
-          <option value="10am">10 AM CST</option>
-          <option value="11am">11 AM CST</option>
-          <option value="12pm">12 PM CST</option>
-          <option value="1pm">1 PM CST</option>
-          <option value="2pm">2 PM CST</option>
-          <option value="3pm">3 PM CST</option>
-          <option value="4pm">4 PM CST</option>
-          <option value="5pm">5 PM CST</option>
+          <option value="8">8 AM CST</option>
+          <option value="9">9 AM CST</option>
+          <option value="10">10 AM CST</option>
+          <option value="11">11 AM CST</option>
+          <option value="12">12 PM CST</option>
+          <option value="1">1 PM CST</option>
+          <option value="2">2 PM CST</option>
+          <option value="3">3 PM CST</option>
+          <option value="4">4 PM CST</option>
+          <option value="5">5 PM CST</option>
         </select>
         <p class="small py-3">(All times are in CST)</p>
         <app-button id="continue-btn" text="continue" (onClick)="toSecondPage()" [disabled]="!timeForm.valid" ></app-button>
