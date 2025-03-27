@@ -1,6 +1,5 @@
 .font{
     font-weight: 800;
-    font-size: 40px;
     color: rgba(0, 0, 0, 0.746);
 }
 
@@ -13,3 +12,15 @@ input{
 .paragraph-box{
     width: 570px;
 }
+
+@media (max-width: 686px) {
+    .paragraph-box{
+        width: 400px;
+    }
+  }
+
+  @media (max-width: 461px) {
+    .paragraph-box{
+      width: 250px;
+    }
+  }
