@@ -1,4 +1,20 @@
-<div class="w-screen h-full overflow-auto">
+<div class="w-screen h-auto overflow-auto">
 
-  <p>yes</p>
+  <app-navbar></app-navbar>
+  <div class="flex flex-col items-center justify-between">
+
+    <p class="font pt-5">Add Your Personal Details</p>
+    <form [formGroup]="form" (ngSubmit)="onSubmit()" class="flex flex-col mt-6">
+      <app-input [formGroup]="form" controlName="name" placeholder="First name" required></app-input>
+      <app-input [formGroup]="form" controlName="lastName" placeholder="Last name" required></app-input>
+      <app-input [formGroup]="form" controlName="email" placeholder="Email" required></app-input>
+      <app-input [formGroup]="form" controlName="phone" placeholder="Phone Number" required></app-input>
+      <div class="w-full h-20 my-3 flex flex-row" style="background-color: rgba(246, 246, 246, 0.771);">
+        <input type="checkbox" required controlName="terms">
+        <p></p>
+      </div>
+    </form>
+
+  </div>
+  <app-footer></app-footer>
 </div>

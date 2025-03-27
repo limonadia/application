@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup, RequiredValidator } from '@angular/forms';
 
 @Component({
   selector: 'app-second-page',
@@ -7,9 +8,23 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SecondPageComponent implements OnInit {
 
-  constructor() { }
+  form: FormGroup;
+  constructor(
+    private fb: FormBuilder
+  ) { 
+    this.form = this.fb.group({
+      name: [''],
+      lastName: [''],
+      email: [''],
+      phone: [''],
+    });
+  }
 
   ngOnInit() {
+  }
+
+  onSubmit(){
+
   }
 
 }
